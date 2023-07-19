@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="scroll">
+<header>
+	<h1> {{ .Title }} </h1>
+	<h3> Last Modified: {{ .Lastmod | time.Format ":date_long"}}</h3>
+</header>
+<article>
+{{ .Content }}
+</article>
+</div>
+{{ end }}

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="scroll">
+<header><h1>{{ .Title }}</h1></header>
+<article>
+i love shrimp
+{{ .Content }}
+<ul>
+{{ range .Pages }}
+<li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</li>
+{{ end }}
+</ul>
+</article>
+</div>
+{{ end }}

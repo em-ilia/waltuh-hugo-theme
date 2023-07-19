@@ -1,0 +1,16 @@
+@use "waltuh/waltuh";
+@use "waltuh/variables" as *;
+
+#pgp_a {
+	position: fixed;
+	display: none;
+
+	font-size: $fs-200;
+	margin-top: 0.6rem;
+}
+
+footer {
+	width: 100%;
+	font-size: clamp(2rem, $fs-800, 15vw);
+	justify-content: center !important;
+}
